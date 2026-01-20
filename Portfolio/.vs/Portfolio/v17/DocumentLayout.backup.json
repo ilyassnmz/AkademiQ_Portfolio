@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_defaultexperiencecomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_defaultexperiencecomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\viewcomponents\\_defaultexperiencecomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\viewcomponents\\_defaultexperiencecomponentpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1150,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T15:24:01.245Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultExperienceComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_DefaultExperienceComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultExperienceComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_DefaultExperienceComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T16:42:14.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Program.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Program.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Program.cs",
+              "RelativeToolTip": "Portfolio\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T16:38:55.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_DefaultExperienceComponentPartial.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\ViewComponents\\_DefaultExperienceComponentPartial.cs",
+              "RelativeDocumentMoniker": "Portfolio\\ViewComponents\\_DefaultExperienceComponentPartial.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\ViewComponents\\_DefaultExperienceComponentPartial.cs",
+              "RelativeToolTip": "Portfolio\\ViewComponents\\_DefaultExperienceComponentPartial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T14:27:37.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1150,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
