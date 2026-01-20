@@ -1,49 +1,60 @@
 ﻿@model List<About>
 
-<section id="section2">
+<section id="section2" class="about-section">
 	<div class="container">
-		<h2>Hakkımda</h2>
+		<h2 class="section-title">Hakkımda</h2>
 
 		@foreach (var item in Model)
 		{
-		<div class="row">
-			<div class="col-sm-3">
-				<img src="@item.ImageUrl" alt="man" class="img-responsive section-img">
-			</div> <!-- end .col-sm-3 -->
-			<div class="col-sm-9">
-				<h3 class="small-margin-bottom">@item.NameSurname</h3>
-				<h5>@item.Title</h5>
-				<p>@item.Description</p>
-				<ul class="list-unstyled text-uppercase">
-					<li><b>Doğum Tarihi:</b> 03 Ekim 2004</li>
-					<li><b>Telefon:</b> @item.Phone</li>
-					<li><b>Email:</b> @item.Email</li>
-					<li><b>Adres:</b> @item.Address</li>
-				</ul> <!-- end .list-unstyled -->
-				<div class="spacer"></div>
-				<h3>Ne İş Yapıyorum ?</h3>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="service">
-							<div class="icon"><i class="ion-monitor"></i></div>
-							<h5>Web Geliştirme</h5>
-						</div> <!-- end .service -->
-					</div> <!-- end .col-sm-4 -->
-					<div class="col-sm-4">
-						<div class="service">
-							<div class="icon"><i class="ion-iphone"></i></div>
-							<h5>Mobil Geliştirme</h5>
-						</div> <!-- end .service -->
-					</div> <!-- end .col-sm-4 -->
-					<div class="col-sm-4">
-						<div class="service">
-							<div class="icon"><i class="ion-trophy"></i></div>
-							<h5>Pazarlama</h5>
-						</div> <!-- end .service -->
-					</div> <!-- end .col-sm-4 -->
-				</div> <!-- end .row -->
-			</div> <!-- end .col-sm-9 -->
-		</div>
+			<div class="about-card">
+				<div class="row align-items-center">
+
+					<div class="col-md-4 text-center">
+						<div class="about-image">
+							<img src="@item.ImageUrl" alt="profile">
+						</div>
+					</div>
+
+					<div class="col-md-8">
+						<h3 class="about-name">@item.NameSurname</h3>
+						<span class="about-role">Back-End Developer</span>
+
+						<p class="about-desc">@item.Description</p>
+
+						<ul class="about-info">
+							<li><b>Doğum Tarihi:</b> 03 Ekim 2004</li>
+							<li><b>Telefon:</b> @item.Phone</li>
+							<li><b>Email:</b> @item.Email</li>
+							<li><b>Adres:</b> @item.Address</li>
+						</ul>
+
+						<h4 class="about-subtitle">Ne İş Yapıyorum?</h4>
+
+						<div class="row about-services">
+							<div class="col-sm-4">
+								<div class="service-box">
+									<i class="ion-monitor"></i>
+									<h6>Web Geliştirme</h6>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="service-box">
+									<i class="ion-iphone"></i>
+									<h6>Mobil Geliştirme</h6>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="service-box">
+									<i class="ion-trophy"></i>
+									<h6>Pazarlama</h6>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
 		}
 	</div>
 </section>
