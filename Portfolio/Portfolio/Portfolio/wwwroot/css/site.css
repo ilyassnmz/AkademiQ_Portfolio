@@ -1,0 +1,352 @@
+/* =====================================================
+   ROOT & THEME
+===================================================== */
+:root {
+    --bg-main: #0b1020;
+    --bg-soft: rgba(255,255,255,0.04);
+    --bg-glass: rgba(255,255,255,0.08);
+    --primary: #7c7cff;
+    --secondary: #22d3ee;
+    --accent: #f472b6;
+    --text-main: #e5e7eb;
+    --text-soft: #9ca3af;
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 26px;
+}
+
+/* =====================================================
+   RESET & BASE
+===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Poppins", sans-serif;
+    background: radial-gradient(circle at top, #11162a, var(--bg-main));
+    color: var(--text-main);
+    line-height: 1.75;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: var(--radius-md);
+}
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: clamp(42px, 6vw, 64px);
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+    h2::after {
+        content: "";
+        width: 80px;
+        height: 4px;
+        margin-top: 14px;
+        display: block;
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+        border-radius: 99px;
+    }
+
+/* =====================================================
+   HEADER
+===================================================== */
+.header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1000;
+    background: rgba(11,16,32,0.65);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+    .header .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 50px;
+        font-size: 14px;
+    }
+
+    .header .available {
+        color: var(--secondary);
+        font-weight: 500;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .header .right-icons a {
+        margin-left: 18px;
+        opacity: .6;
+    }
+
+        .header .right-icons a:hover {
+            opacity: 1;
+            color: var(--accent);
+        }
+
+    .header .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 50px;
+    }
+
+    .header .title a {
+        font-size: 24px;
+        font-weight: 700;
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+/* =====================================================
+   NAV
+===================================================== */
+.main-nav ul {
+    display: flex;
+    gap: 34px;
+}
+
+.main-nav li a {
+    font-size: 15px;
+    opacity: .7;
+    position: relative;
+}
+
+    .main-nav li a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        width: 0;
+        height: 3px;
+        background: var(--primary);
+        border-radius: 99px;
+        transform: translateX(-50%);
+        transition: .3s;
+    }
+
+    .main-nav li a:hover,
+    .main-nav .active a {
+        opacity: 1;
+    }
+
+        .main-nav li a:hover::after,
+        .main-nav .active a::after {
+            width: 70%;
+        }
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+section {
+    padding: 140px 0;
+}
+
+#section1 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+    #section1 p {
+        max-width: 520px;
+        color: var(--text-soft);
+        margin: 28px 0;
+    }
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+.button {
+    padding: 14px 34px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.solid-button.white {
+    background: #fff;
+    color: #000;
+}
+
+.solid-button.purple {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* =====================================================
+   ABOUT
+===================================================== */
+#section2 p {
+    color: var(--text-soft);
+}
+
+#section2 ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.service {
+    background: linear-gradient( 180deg, var(--bg-glass), transparent );
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    text-align: center;
+    transition: all .4s ease;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+    .service:hover {
+        transform: translateY(-14px);
+        background: linear-gradient( 180deg, rgba(124,124,255,0.15), transparent );
+    }
+
+    .service .icon {
+        font-size: 42px;
+        margin-bottom: 18px;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+/* =====================================================
+   SKILLS
+===================================================== */
+.progress {
+    height: 12px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient( 90deg, var(--primary), var(--secondary) );
+}
+
+/* =====================================================
+   EXPERIENCE
+===================================================== */
+.experience-block {
+    background: var(--bg-soft);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+    .experience-block::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient( 135deg, transparent, rgba(124,124,255,0.12) );
+        opacity: 0;
+        transition: .4s;
+    }
+
+    .experience-block:hover::before {
+        opacity: 1;
+    }
+
+/* =====================================================
+   PORTFOLIO
+===================================================== */
+.portfolio .item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( 180deg, rgba(11,16,32,0.2), rgba(11,16,32,0.95) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .4s;
+}
+
+.portfolio .item:hover .overlay {
+    opacity: 1;
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255,255,255,0.08);
+    background: var(--bg-soft);
+    color: white;
+}
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+    }
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.footer {
+    background: #050814;
+    color: var(--text-soft);
+}
+
+    .footer .top {
+        padding: 80px 0;
+    }
+
+    .footer h4 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .footer .bottom {
+        text-align: center;
+        padding: 18px;
+        font-size: 13px;
+        border-top: 1px solid rgba(255,255,255,0.05);
+    }
