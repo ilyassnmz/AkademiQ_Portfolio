@@ -1,4 +1,5 @@
 wwwroot\css\site.css
+wwwroot\cv.pdf
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -65,6 +66,7 @@ wwwroot\sility\404.html
 wwwroot\sility\css\bootstrap.min.css
 wwwroot\sility\css\owl.carousel.css
 wwwroot\sility\css\owl.theme.default.css
+wwwroot\sility\css\style.css
 wwwroot\sility\fonts\ionicons\css\ionicons.css
 wwwroot\sility\fonts\ionicons\css\ionicons.min.css
 wwwroot\sility\fonts\ionicons\fonts\ionicons.eot
@@ -187,8 +189,6 @@ wwwroot\sility\js\smoothscroll.js
 wwwroot\sility\scripts\contact.php
 wwwroot\sility\single-blog-post.html
 wwwroot\sility\single-portfolio.html
-wwwroot\sility\css\style.css
-C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\css\site.css
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\favicon.ico
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\js\site.js
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -253,7 +253,7 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwr
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\404.html
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\css\bootstrap.min.css
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\css\owl.carousel.css
-C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\css\owl.theme.default.css
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\css\site.css
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\fonts\ionicons\css\ionicons.css
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\fonts\ionicons\css\ionicons.min.css
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\fonts\ionicons\fonts\ionicons.svg
@@ -275,3 +275,4 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwr
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\single-blog-post.html
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\single-portfolio.html
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\css\style.css
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\css\owl.theme.default.css

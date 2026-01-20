@@ -11,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_defaultfeaturecomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_defaultfootercomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_defaultfootercomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\wwwroot\\sility\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\wwwroot\\sility\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,27 +54,53 @@
               "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_DefaultFeatureComponentPartial\\Default.cshtml",
               "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultFeatureComponentPartial\\Default.cshtml",
               "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_DefaultFeatureComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-20T20:54:52.79Z",
+              "WhenOpened": "2026-01-20T21:23:00.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
-              "RelativeDocumentMoniker": "Portfolio\\wwwroot\\sility\\css\\style.css",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
-              "RelativeToolTip": "Portfolio\\wwwroot\\sility\\css\\style.css",
-              "ViewState": "AgIAACINAAAAAAAAAAAUwEkNAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-20T18:46:21.529Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T21:20:34.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwBsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T21:13:53.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
+              "RelativeDocumentMoniker": "Portfolio\\wwwroot\\sility\\css\\style.css",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
+              "RelativeToolTip": "Portfolio\\wwwroot\\sility\\css\\style.css",
+              "ViewState": "AgIAANUMAAAAAAAAAAAUwO0MAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-20T18:46:21.529Z",
+              "EditorCaption": ""
             }
           ]
         },
