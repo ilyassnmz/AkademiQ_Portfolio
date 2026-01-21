@@ -1,3 +1,4 @@
+wwwroot\code.html
 wwwroot\css\site.css
 wwwroot\cv.pdf
 wwwroot\favicon.ico
@@ -276,3 +277,4 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwr
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\single-portfolio.html
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\css\style.css
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\sility\css\owl.theme.default.css
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\wwwroot\code.html

@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\skill\\skilllist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\skill\\skilllist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_defaultfeaturecomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_defaultfeaturecomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\controllers\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\controllers\\skillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_defaultfootercomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_defaultfootercomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\skill\\updateskill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\skill\\updateskill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\wwwroot\\sility\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\wwwroot\\sility\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_defaultnavbarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\statistics\\statisticscards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\statistics\\statisticscards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,72 +35,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "Portfolio\\Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "Portfolio\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Title": "SkillList.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Skill\\SkillList.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Skill\\SkillList.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Skill\\SkillList.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Skill\\SkillList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-19T15:24:01.245Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultFeatureComponentPartial\\Default.cshtml",
-              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_DefaultFeatureComponentPartial\\Default.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultFeatureComponentPartial\\Default.cshtml",
-              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_DefaultFeatureComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-20T21:23:00.315Z",
+              "WhenOpened": "2026-01-21T08:19:29.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
-              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
-              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_DefaultFooterComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABUAAAAAAAAAA==",
+              "Title": "UpdateSkill.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Skill\\UpdateSkill.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Skill\\UpdateSkill.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Skill\\UpdateSkill.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Skill\\UpdateSkill.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-20T21:20:34.505Z",
+              "WhenOpened": "2026-01-21T08:11:28.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
-              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
-              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_DefaultNavbarComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAiwBsAAAAdAAAAAAAAAA==",
+              "Title": "StatisticsCards.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Statistics\\StatisticsCards.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Statistics\\StatisticsCards.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Statistics\\StatisticsCards.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Statistics\\StatisticsCards.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-20T21:13:53.183Z",
+              "WhenOpened": "2026-01-21T07:45:55.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "Portfolio\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T07:38:09.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SkillController.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\SkillController.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Controllers\\SkillController.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\SkillController.cs",
+              "RelativeToolTip": "Portfolio\\Controllers\\SkillController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T06:36:01.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
-              "RelativeDocumentMoniker": "Portfolio\\wwwroot\\sility\\css\\style.css",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
-              "RelativeToolTip": "Portfolio\\wwwroot\\sility\\css\\style.css",
-              "ViewState": "AgIAANUMAAAAAAAAAAAUwO0MAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-20T18:46:21.529Z",
-              "EditorCaption": ""
             }
           ]
         },

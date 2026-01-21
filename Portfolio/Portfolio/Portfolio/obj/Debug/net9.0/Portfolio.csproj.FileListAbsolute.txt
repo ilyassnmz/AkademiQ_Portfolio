@@ -369,3 +369,4 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\bin\
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\compressed\22wp8f1e4x-f6o57cmky6.gz
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\compressed\4daxw65sh0-vq4vvvq34h.gz
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\compressed\qjbarokqeh-ktbawzmdb9.gz
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\compressed\qr4xn50xha-wblgrdxtu5.gz
