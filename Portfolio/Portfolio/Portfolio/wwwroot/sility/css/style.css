@@ -3308,3 +3308,353 @@ a:hover,
     }
 }
 
+:root {
+    --primary-color: #2563eb;
+    --accent-color: #38bdf8;
+    --main-bg: #f8fafc; /* Arka plan bembeyaz/açık gri */
+    --card-bg: #0f172a; /* Kartlar orijinal koyuluğunda */
+    --card-bg-soft: #111827;
+    --text-main: #1e293b; /* Sayfa geneli metinler artık koyu */
+    --text-muted: #64748b;
+    --border-color: #e2e8f0; /* Dış borderlar açık renk */
+}
+
+/* ===== PAGE ===== */
+.education-container {
+    padding: 24px;
+    min-height: 100vh;
+    background: #f8fafc; /* Sayfa arka planı beyaz */
+}
+
+/* ===== HEADER ===== */
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 22px 26px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.education-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a; /* Başlık artık görünür olması için koyu */
+    padding-left: 16px;
+    position: relative;
+}
+
+    .education-title::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 70%;
+        background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+        border-radius: 4px;
+    }
+
+.add-education-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+}
+
+    .add-education-btn:hover {
+        filter: brightness(1.05);
+    }
+
+/* ===== SEARCH & FILTERS ===== */
+.search-input {
+    width: 100%;
+    padding: 14px 18px 14px 44px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    color: #0f172a;
+}
+
+    .search-input::placeholder {
+        color: #94a3b8;
+    }
+
+.filter-btn {
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #64748b;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+    .filter-btn.active {
+        background: var(--primary-color);
+        color: #fff;
+        border-color: var(--primary-color);
+        box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+    }
+
+/* ===== GRID ===== */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+/* ===== CARD (KOYU - DEĞİŞMEDİ) ===== */
+.education-card {
+    background: #0f172a;
+    border-radius: 16px;
+    border: 1px solid #1e293b;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+    .education-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    }
+
+.education-card-header {
+    padding: 20px;
+    background: linear-gradient(135deg, #020617, #0b1220);
+    border-bottom: 1px solid #1e293b;
+    position: relative;
+}
+
+.education-status {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.status-active {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+}
+
+.status-completed {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.institution-icon {
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.institution-info h3 {
+    color: #e5e7eb;
+    margin: 0;
+}
+
+.institution-info p {
+    color: #94a3b8;
+    margin: 0;
+}
+
+.education-card-body {
+    padding: 20px;
+    background: #111827;
+}
+
+.detail-label {
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+.detail-value {
+    font-size: 15px;
+    color: #e5e7eb;
+    margin-left: 22px;
+}
+
+.education-description {
+    margin-top: 16px;
+    padding: 14px;
+    background: #0f172a;
+    border-radius: 10px;
+    color: #cbd5f5;
+    border-left: 4px solid var(--primary-color);
+}
+
+.education-card-footer {
+    padding: 16px 20px;
+    background: #0b1220;
+    border-top: 1px solid #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.action-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: var(--primary-color);
+}
+
+.delete-btn {
+    background: #ef4444;
+}
+
+/* Arama ve filtreleme için ekstra boşluk */
+.search-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    color: #94a3b8;
+}
+
+.education-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+/* Genel container */
+.container {
+    padding: 30px 15px;
+}
+
+    /* Başlık */
+    .container h2 {
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #1e293b;
+    }
+
+/* Kart */
+.card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
+    background: #ffffff;
+}
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+    }
+
+/* Kart görseli */
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Kart içi */
+.card-body {
+    padding: 20px;
+}
+
+    /* Proje başlığı */
+    .card-body h5 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 8px;
+    }
+
+    /* Alt başlık */
+    .card-body p {
+        font-size: 14px;
+        color: #64748b;
+        margin: 0;
+    }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.col-md-4 {
+    flex: 0 0 calc(33.333% - 16px);
+}
+
+.card {
+    background-color: #0f172a; /* kart dışı koyu lacivert */
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.card-body {
+    background: linear-gradient(180deg, #1e3a8a, #1e40af); /* mavi ton */
+    color: #e5edff;
+    padding: 16px;
+}
+
+    .card-body h5 {
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .card-body p {
+        color: #c7d2fe;
+        font-size: 14px;
+    }
+
+    .projects-h2 {
+    color: #e0e7ff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 18px;
+    letter-spacing: 0.5px;
+}
+
+.projects-h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 70%;
+    background: linear-gradient(to bottom, #3b82f6, #6366f1);
+    border-radius: 4px;
+}

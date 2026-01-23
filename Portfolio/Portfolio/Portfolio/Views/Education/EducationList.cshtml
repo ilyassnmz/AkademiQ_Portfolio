@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Eğitim Listesi";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="~/sility/css/style.css">
+
+<div class="education-container">
+    <div class="education-header">
+        <h1 class="education-title">Eğitim Listesi</h1>
+        <a href="/Education/Create" class="add-education-btn">
+            <i class="fas fa-plus"></i>
+            Yeni Eğitim Ekle
+        </a>
+    </div>
+
+    <!-- Arama ve Filtreleme -->
+    <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="Eğitim ara...">
+    </div>
+
+    <div class="education-filters">
+        <button class="filter-btn active">Tümü</button>
+        <button class="filter-btn">Devam Eden</button>
+        <button class="filter-btn">Tamamlanan</button>
+        <button class="filter-btn">Son Eklenenler</button>
+        <button class="filter-btn">Eski Kayıtlar</button>
+    </div>
+
+    <div class="education-grid">
+
+        <!-- Örnek Eğitim Kartı 1 -->
+        <div class="education-card">
+            <div class="education-card-header">
+                <span class="education-status status-completed">Tamamlandı</span>
+                <div class="education-institution">
+                    <div class="institution-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="institution-info">
+                        <h3>BTK Akademi</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-card-body">
+                <div class="education-detail">
+                    <div class="detail-label">
+                        <i class="fas fa-graduation-cap"></i>
+                        Alan
+                    </div>
+                    <div class="detail-value">Mobil Uygulama Geliştirme Eğitimi</div>
+                </div>
+
+                <div class="education-detail">
+                    <div class="detail-label">
+                        <i class="fas fa-calendar-alt"></i>
+                        Tarih Aralığı
+                    </div>
+                    <div class="detail-value">Mayıs-2025</div>
+                </div>
+
+                <div class="education-description">
+                    Flutter & Dart ile Mobil uygulama geliştirme eğitimi.
+                </div>
+            </div>
+
+            <div class="education-card-footer">
+                <div class="education-date">
+                    <i class="far fa-clock"></i>
+                    Son Güncelleme: 21.01.2026
+                </div>
+                <div class="education-actions">
+                    <button class="action-btn edit-btn" onclick="location.href='/Education/Edit/1'">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="action-btn delete-btn" onclick="confirmDelete(1)">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Örnek Eğitim Kartı 2 -->
+        <div class="education-card">
+            <div class="education-card-header">
+                <span class="education-status status-active">Devam Ediyor</span>
+                <div class="education-institution">
+                    <div class="institution-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="institution-info">
+                        <h3>Atatürk Üniversitesi</h3>
+                        <p>Önlisans Programı</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-card-body">
+                <div class="education-detail">
+                    <div class="detail-label">
+                        <i class="fas fa-graduation-cap"></i>
+                        Bölüm
+                    </div>
+                    <div class="detail-value">Bilgisayar Programcılığı</div>
+                </div>
+
+                <div class="education-detail">
+                    <div class="detail-label">
+                        <i class="fas fa-calendar-alt"></i>
+                        Tarih Aralığı
+                    </div>
+                    <div class="detail-value">2024 - Devam Ediyor</div>
+                </div>
+
+                <div class="education-description">
+                    Bilgisayar bilimleri, yazılım geliştirme, algoritmalar ve veri yapıları üzerine kapsamlı eğitim.
+                </div>
+            </div>
+
+            <div class="education-card-footer">
+                <div class="education-date">
+                    <i class="far fa-clock"></i>
+                    Son Güncelleme: 21.01.2026
+                </div>
+                <div class="education-actions">
+                    <button class="action-btn edit-btn" onclick="location.href='/Education/Edit/2'">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="action-btn delete-btn" onclick="confirmDelete(2)">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
