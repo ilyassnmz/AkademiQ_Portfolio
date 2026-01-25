@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_adminlayoutsidebarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_adminlayoutsidebarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\wwwroot\\sility\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\wwwroot\\sility\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1150,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,42 +30,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\README.md",
+              "RelativeDocumentMoniker": "Portfolio\\README.md",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\README.md",
+              "RelativeToolTip": "Portfolio\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-25T20:39:39.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Contact\\Index.cshtml",
-              "RelativeDocumentMoniker": "Portfolio\\Views\\Contact\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Contact\\Index.cshtml",
-              "RelativeToolTip": "Portfolio\\Views\\Contact\\Index.cshtml",
-              "ViewState": "AgIAAJ0BAAAAAAAAAAAiwPkBAAAGAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-25T19:20:54.199Z",
+              "WhenOpened": "2026-01-25T20:12:52.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "Portfolio\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "Portfolio\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T19:19:54.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
-              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
-              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-25T16:49:04.742Z",
-              "EditorCaption": ""
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
+              "RelativeDocumentMoniker": "Portfolio\\wwwroot\\sility\\css\\style.css",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\wwwroot\\sility\\css\\style.css",
+              "RelativeToolTip": "Portfolio\\wwwroot\\sility\\css\\style.css",
+              "ViewState": "AgIAADQOAAAAAAAAAAAUwEwOAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-25T20:08:54.137Z"
             }
           ]
         },

@@ -369,4 +369,4 @@ C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.pdb
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.genruntimeconfig.cache
 C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\ref\Portfolio.dll
-C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\compressed\qjbarokqeh-fbtmqu410a.gz
+C:\Users\lunap\OneDrive\Masaüstü\MyProjects\Portfolio\Portfolio\Portfolio\obj\Debug\net9.0\compressed\qjbarokqeh-1igxfbcjup.gz
