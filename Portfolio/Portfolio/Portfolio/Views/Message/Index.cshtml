@@ -1,0 +1,529 @@
+﻿@model List<Portfolio.Entities.Message>
+
+@{
+    ViewData["Title"] = "Mesajlar";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<style>
+    /* AÇIK TEMA - Mesajlar Sayfası */
+    :root {
+        --primary-white: #ffffff;
+        --light-gray: #f8f9fa;
+        --medium-gray: #e9ecef;
+        --text-gray: #6c757d;
+        --text-dark: #343a40;
+        --border-light: #dee2e6;
+        --page-bg: #e9ecef;
+        /* Renkler */
+        --blue-primary: #0d6efd;
+        --blue-light: #e7f1ff;
+        --blue-hover: #0b5ed7;
+        --orange-primary: #fd7e14;
+        --orange-light: #fff3e6;
+        --orange-hover: #e56b00;
+        --green-primary: #198754;
+        --green-light: #e6f4ea;
+        --green-hover: #157347;
+        --purple-primary: #6f42c1;
+        --purple-light: #f0e6ff;
+        --purple-hover: #5f3dc4;
+        --teal-primary: #20c997;
+        --teal-light: #e6f7f2;
+        --yellow-primary: #ffc107;
+        --yellow-light: #fff8e1;
+        --red-primary: #dc3545;
+        --red-light: #f8d7da;
+        /* Gölgeler */
+        --shadow-light: 0 3px 10px rgba(0,0,0,0.08);
+        --shadow-medium: 0 6px 20px rgba(0,0,0,0.12);
+        --shadow-strong: 0 10px 30px rgba(0,0,0,0.15);
+        --shadow-card: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Sayfa Genel Stilleri - ORTALAMA */
+    .messages-page {
+        background-color: #dee2e6;
+        min-height: 100vh;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        background-image: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+        padding: 40px 30px;
+        color: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+        /* Sayfa Başlığı */
+        .messages-page > h2 {
+            color: #2c3e50;
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+        }
+
+            .messages-page > h2::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 120px;
+                height: 4px;
+                background: linear-gradient(90deg, #0d6efd, #20c997);
+                border-radius: 2px;
+            }
+
+    /* Mesajlar Listesi - ORTALAMA */
+    .messages-list {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+        gap: 25px;
+        width: 100%;
+    }
+
+    /* Mesaj Kartı */
+    .message-card {
+        background: white;
+        border-radius: 20px;
+        padding: 0;
+        box-shadow: var(--shadow-card);
+        border: 2px solid #e9ecef;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+    }
+
+        /* Okunmamış Mesaj */
+        .message-card.unread {
+            border-left: 6px solid #0d6efd;
+            background: linear-gradient(to right, #ffffff 0%, #f8fbfe 100%);
+        }
+
+            .message-card.unread::before {
+                content: 'YENİ';
+                position: absolute;
+                top: 15px;
+                right: -30px;
+                background: #0d6efd;
+                color: white;
+                padding: 5px 35px;
+                font-size: 12px;
+                font-weight: 700;
+                transform: rotate(45deg);
+                box-shadow: 0 3px 10px rgba(13, 110, 253, 0.3);
+            }
+
+        /* Okunmuş Mesaj */
+        .message-card.read {
+            border-left: 6px solid #6f42c1;
+            opacity: 0.95;
+        }
+
+            .message-card.read:hover {
+                opacity: 1;
+            }
+
+        /* Hover Efekti */
+        .message-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-strong);
+            border-color: #ced4da;
+        }
+
+    /* Mesaj Header */
+    .message-header {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 20px 25px;
+        border-bottom: 2px solid #e9ecef;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+        .message-header strong {
+            color: #2c3e50;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .message-header span {
+            color: #0d6efd;
+            font-size: 14px;
+            font-weight: 600;
+            background: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            border: 1px solid #e9ecef;
+        }
+
+    .message-card.unread .message-header {
+        background: linear-gradient(135deg, #e7f1ff 0%, #d4e3ff 100%);
+    }
+
+    /* Mesaj Konu */
+    .message-subject {
+        padding: 20px 25px;
+        border-bottom: 1px solid #e9ecef;
+        position: relative;
+    }
+
+        .message-subject::before {
+            content: '📌';
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+        }
+
+    .message-subject {
+        color: #495057;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 45px;
+        margin: 0;
+    }
+
+    /* Mesaj Metni */
+    .message-text {
+        padding: 25px;
+        color: #495057;
+        font-size: 15px;
+        line-height: 1.6;
+        flex-grow: 1;
+        margin: 0;
+        background: white;
+    }
+
+    .message-card.unread .message-text {
+        background: #f8fbfe;
+    }
+
+    /* Mesaj Footer */
+    .message-footer {
+        padding: 15px 25px;
+        border-top: 2px solid #e9ecef;
+        background: #f8f9fa;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .message-footer span {
+            color: #6c757d;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .message-footer span::before {
+                content: '🕒';
+                font-size: 14px;
+            }
+
+    /* Mesaj Durumu */
+    .message-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .message-card.unread .message-status {
+        background: #e7f1ff;
+        color: #0d6efd;
+    }
+
+    .message-card.read .message-status {
+        background: #f0e6ff;
+        color: #6f42c1;
+    }
+
+    /* Mesaj ID */
+    .message-id {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #f8f9fa;
+        color: #6c757d;
+        padding: 3px 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        border: 1px solid #e9ecef;
+        z-index: 2;
+    }
+
+    /* Boş Durum - ORTALAMA */
+    .messages-page > p {
+        text-align: center;
+        padding: 60px 30px;
+        background: white;
+        border-radius: 20px;
+        color: #6c757d;
+        font-size: 18px;
+        font-weight: 500;
+        max-width: 800px;
+        margin: 40px auto;
+        box-shadow: var(--shadow-light);
+        border: 2px dashed #e9ecef;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .messages-page > p::before {
+            content: '💬';
+            font-size: 48px;
+            display: block;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+
+    /* Konu Etiketleri */
+    .category-tag {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .category-proje {
+        background: #f0e6ff;
+        color: #6f42c1;
+    }
+
+    .category-web {
+        background: #e6f7f2;
+        color: #20c997;
+    }
+
+    .category-danismanlik {
+        background: #fff3e6;
+        color: #fd7e14;
+    }
+
+    .category-egitim {
+        background: #fff8e1;
+        color: #ffc107;
+    }
+
+    /* Sayfa içeriği için container */
+    .messages-content {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    
+    /* Scroll düzeltmesi */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* Header düzeltmesi */
+    .messages-page > h2 {
+        flex-shrink: 0;
+    }
+
+    /* Listeyi ortala */
+    .messages-list {
+        flex-grow: 1;
+    }
+</style>
+
+<div class="messages-page">
+    <div class="messages-content">
+        <h2>Mesajlar</h2>
+
+        @if (Model != null && Model.Any())
+        {
+            <div class="messages-list">
+                @foreach (var item in Model)
+                {
+                    <div class="message-card @(item.IsRead == true ? "read" : "unread")">
+                        <div class="message-header">
+                            <strong>@item.SenderName</strong>
+                            <span>@item.SenderEmail</span>
+                        </div>
+
+                        <div class="message-subject">
+                            @item.MessageSubject
+                        </div>
+
+                        <div class="message-text">
+                            @item.MessageText
+                        </div>
+
+                        <div class="message-footer">
+                            <span>
+                                @item.SendDate?.ToString("dd.MM.yyyy HH:mm")
+                            </span>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>Henüz mesaj bulunmamaktadır.</p>
+        }
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mesaj kartlarına index atama
+        const messageCards = document.querySelectorAll('.message-card');
+        messageCards.forEach((card, index) => {
+            // Mesaj konusuna göre kategori etiketi ekle
+            const subjectElement = card.querySelector('.message-subject');
+            const subjectText = subjectElement.textContent;
+
+            let category = '';
+            let categoryClass = '';
+
+            if (subjectText.includes('Proje Teklifi')) {
+                category = 'PROJE';
+                categoryClass = 'category-proje';
+            } else if (subjectText.includes('Web/API')) {
+                category = 'WEB';
+                categoryClass = 'category-web';
+            } else if (subjectText.includes('Danışmanlık')) {
+                category = 'DANIŞMANLIK';
+                categoryClass = 'category-danismanlik';
+            } else if (subjectText.includes('Eğitim')) {
+                category = 'EĞİTİM';
+                categoryClass = 'category-egitim';
+            }
+
+            if (category) {
+                const categoryTag = document.createElement('span');
+                categoryTag.className = `category-tag ${categoryClass}`;
+                categoryTag.textContent = category;
+                subjectElement.appendChild(categoryTag);
+            }
+
+            // Mesaj ID'sini ekle
+            const idBadge = document.createElement('span');
+            idBadge.className = 'message-id';
+            idBadge.textContent = `#${index + 1}`;
+            card.appendChild(idBadge);
+        });
+
+        // Okunmamış mesaj sayısını göster
+        const unreadCount = document.querySelectorAll('.message-card.unread').length;
+        if (unreadCount > 0) {
+            const pageTitle = document.querySelector('.messages-page > h2');
+            const badge = document.createElement('span');
+            badge.style.cssText = `
+                background: #0d6efd;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 14px;
+                font-weight: 700;
+                margin-left: 15px;
+                box-shadow: 0 3px 10px rgba(13, 110, 253, 0.3);
+                vertical-align: middle;
+            `;
+            badge.textContent = `${unreadCount} YENİ`;
+            pageTitle.appendChild(badge);
+        }
+
+        // Mesaj kartlarına tıklama efekti
+        messageCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Okunmamış mesajı okundu yap
+                if (this.classList.contains('unread')) {
+                    this.classList.remove('unread');
+                    this.classList.add('read');
+
+                    // YENİ etiketini kaldır
+                    const newLabel = this.querySelector('::before');
+                    if (newLabel) {
+                        newLabel.remove();
+                    }
+
+                    // Yeni mesaj sayısını güncelle
+                    const currentBadge = document.querySelector('.messages-page > h2 span');
+                    if (currentBadge) {
+                        const currentCount = parseInt(currentBadge.textContent.split(' ')[0]) - 1;
+                        if (currentCount > 0) {
+                            currentBadge.textContent = `${currentCount} YENİ`;
+                        } else {
+                            currentBadge.remove();
+                        }
+                    }
+                }
+            });
+
+            // Hover efekti için
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Sayfa yüksekliğini ayarla
+        function adjustPageHeight() {
+            const page = document.querySelector('.messages-page');
+            const header = document.querySelector('.messages-page > h2');
+            const list = document.querySelector('.messages-list');
+
+            if (page && header && list) {
+                const headerHeight = header.offsetHeight;
+                const listHeight = list.offsetHeight;
+                const viewportHeight = window.innerHeight;
+
+                // Eğer içerik viewport'tan küçükse, ortala
+                if (headerHeight + listHeight < viewportHeight) {
+                    page.style.justifyContent = 'center';
+                    page.style.paddingTop = `${(viewportHeight - (headerHeight + listHeight + 80)) / 2}px`;
+                } else {
+                    page.style.justifyContent = 'flex-start';
+                    page.style.paddingTop = '40px';
+                }
+            }
+        }
+
+        // Sayfa yüklendiğinde ve yeniden boyutlandırıldığında ayarla
+        adjustPageHeight();
+        window.addEventListener('resize', adjustPageHeight);
+    });
+</script>
