@@ -1,0 +1,255 @@
+/* Root & Typography */
+:root {
+    --primary: #2563eb;
+    --primary-soft: rgba(37, 99, 235, 0.15);
+    --dark: #0f172a;
+    --gray: #64748b;
+    --bg: #f8fafc;
+    --white: #ffffff;
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background-color: var(--bg);
+    color: var(--dark);
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 10px;
+    padding: 0.55rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+    .btn-primary:hover {
+        background-color: #1e40af;
+        border-color: #1e40af;
+        transform: translateY(-1px);
+    }
+
+.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+    .btn-outline-primary:hover {
+        background-color: var(--primary);
+        color: var(--white);
+    }
+
+/* Focus states */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.15rem var(--primary-soft);
+    border-color: var(--primary);
+}
+
+/* Forms */
+.form-control {
+    border-radius: 10px;
+    border-color: #e2e8f0;
+    padding: 0.6rem 0.9rem;
+    transition: all 0.2s ease;
+}
+
+    .form-control:focus {
+        background-color: var(--white);
+    }
+
+.form-floating > .form-control::placeholder {
+    color: var(--gray);
+}
+
+.form-floating > .form-control-plaintext::placeholder {
+    color: var(--gray);
+}
+
+.form-floating > .form-control:focus::placeholder,
+.form-floating > .form-control-plaintext:focus::placeholder {
+    text-align: start;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    transition: all 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    }
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: var(--gray);
+    max-width: 600px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    border-top: 1px solid #e2e8f0;
+    padding: 1.25rem 0;
+    font-size: 0.9rem;
+    color: var(--gray);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Utilities */
+.text-muted {
+    color: var(--gray) !important;
+}
+
+.shadow-soft {
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================
+   VISUAL POLISH - MODERN UI
+   ========================= */
+
+:root {
+    --primary: #6366f1; /* indigo */
+    --primary-soft: #818cf8;
+    --dark: #0f172a;
+    --text: #334155;
+    --muted: #64748b;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Buttons */
+.btn,
+.solid-button {
+    border-radius: 12px;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+    .btn:hover,
+    .solid-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(99, 102, 241, 0.25);
+    }
+
+/* Cards / Sections */
+.card,
+.service,
+.portfolio-details,
+.blog-post .inner {
+    background: var(--card-bg);
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    transition: all 0.3s ease;
+}
+
+    .card:hover,
+    .service:hover,
+    .blog-post:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+    }
+
+/* Images */
+img {
+    border-radius: 14px;
+}
+
+/* Progress bars / accents */
+.progress-bar,
+.timeline-dot,
+.header .top,
+.social-icon:hover {
+    background-color: var(--primary) !important;
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--primary-soft);
+    }
+
+/* Forms */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+}
+
+    .form-control:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    }
+
+/* Section spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Subtle animation */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    }
+}

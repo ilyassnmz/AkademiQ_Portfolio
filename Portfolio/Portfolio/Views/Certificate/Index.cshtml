@@ -1,0 +1,434 @@
+﻿@model List<Portfolio.Entities.Certificate>
+
+@{
+    ViewData["Title"] = "Sertifikalar";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<style>
+    /* AÇIK TEMA - Sertifikalar Sayfası */
+    :root {
+        --primary-white: #ffffff;
+        --light-gray: #f8f9fa;
+        --medium-gray: #e9ecef;
+        --text-gray: #6c757d;
+        --text-dark: #343a40;
+        --border-light: #dee2e6;
+        --page-bg: #e9ecef;
+        /* Renkler */
+        --blue-primary: #0d6efd;
+        --blue-light: #e7f1ff;
+        --blue-hover: #0b5ed7;
+        --orange-primary: #fd7e14;
+        --orange-light: #fff3e6;
+        --orange-hover: #e56b00;
+        --green-primary: #198754;
+        --green-light: #e6f4ea;
+        --green-hover: #157347;
+        --purple-primary: #6f42c1;
+        --purple-light: #f0e6ff;
+        --purple-hover: #5f3dc4;
+        --teal-primary: #20c997;
+        --teal-light: #e6f7f2;
+        --yellow-primary: #ffc107;
+        --yellow-light: #fff8e1;
+        --red-primary: #dc3545;
+        --red-light: #f8d7da;
+        /* Gölgeler */
+        --shadow-light: 0 3px 10px rgba(0,0,0,0.08);
+        --shadow-medium: 0 6px 20px rgba(0,0,0,0.12);
+        --shadow-strong: 0 10px 30px rgba(0,0,0,0.15);
+        --shadow-card: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Sayfa Genel Stilleri */
+    .certificate-page {
+        background-color: #dee2e6;
+        min-height: 100vh;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        background-image: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+        padding: 50px;
+        color: #2c3e50;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+        /* Sayfa Başlığı */
+        .certificate-page > h2 {
+            color: #2c3e50;
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 25px;
+            width: 100%;
+            border-bottom: 3px solid #e9ecef;
+        }
+
+            .certificate-page > h2::after {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200px;
+                height: 3px;
+                background: linear-gradient(90deg, #6f42c1, #0d6efd, #20c997);
+                border-radius: 2px;
+            }
+
+    /* Sertifika Listesi */
+    .certificate-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    /* Sertifika Kartı */
+    .certificate-card {
+        background: white;
+        border-radius: 25px;
+        padding: 35px;
+        box-shadow: var(--shadow-card);
+        border: 3px solid #e9ecef;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        min-height: 280px;
+        position: relative;
+        z-index: 1;
+    }
+
+        .certificate-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: var(--shadow-strong);
+            border-color: #ced4da;
+            z-index: 10;
+        }
+
+        /* Sertifika Kartı Üst Çizgi */
+        .certificate-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #6f42c1, #0d6efd, #20c997);
+            z-index: 2;
+        }
+
+    /* Sertifika İsmi */
+    .certificate-name {
+        color: #2c3e50;
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        line-height: 1.3;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #f1f3f5;
+        min-height: 70px;
+    }
+
+    /* Şirket Adı */
+    .certificate-company {
+        display: inline-block;
+        background: linear-gradient(135deg, #6f42c1, #845ef7);
+        color: white;
+        padding: 10px 22px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 12px rgba(111, 66, 193, 0.2);
+        align-self: flex-start;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    /* Açıklama */
+    .certificate-description {
+        color: #495057;
+        font-size: 18px;
+        line-height: 1.6;
+        flex-grow: 1;
+        margin-bottom: 25px;
+        padding: 15px 0;
+        border-top: 1px solid #f1f3f5;
+        border-bottom: 1px solid #f1f3f5;
+    }
+
+    /* Tarih */
+    .certificate-date {
+        color: #0d6efd;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 18px;
+        background: #e7f1ff;
+        border-radius: 15px;
+        border: 2px solid #d4e3ff;
+        align-self: flex-start;
+    }
+
+        .certificate-date::before {
+            content: '📅';
+            font-size: 20px;
+        }
+
+    /* Alternatif Kart Renkleri */
+    .certificate-card:nth-child(3n+1) .certificate-company {
+        background: linear-gradient(135deg, #6f42c1, #845ef7);
+    }
+
+    .certificate-card:nth-child(3n+2) .certificate-company {
+        background: linear-gradient(135deg, #0d6efd, #4dabf7);
+    }
+
+    .certificate-card:nth-child(3n+3) .certificate-company {
+        background: linear-gradient(135deg, #20c997, #38d9a9);
+    }
+
+    /* Alternatif Tarih Renkleri */
+    .certificate-card:nth-child(3n+1) .certificate-date {
+        color: #6f42c1;
+        background: #f0e6ff;
+        border-color: #e0d4f7;
+    }
+
+    .certificate-card:nth-child(3n+2) .certificate-date {
+        color: #0d6efd;
+        background: #e7f1ff;
+        border-color: #d4e3ff;
+    }
+
+    .certificate-card:nth-child(3n+3) .certificate-date {
+        color: #20c997;
+        background: #e6f7f2;
+        border-color: #d3f9d8;
+    }
+
+    /* Kart Arka Plan Efekti */
+    .certificate-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(111, 66, 193, 0.03), rgba(13, 110, 253, 0.03), rgba(32, 201, 151, 0.03));
+        border-radius: 25px;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .certificate-card:hover::after {
+        opacity: 1;
+    }
+
+    /* Kart Köşe Dekorasyonu */
+    .certificate-card::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236f42c1'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        z-index: 1;
+    }
+
+    /* Boş Durum */
+    .certificate-page > p {
+        text-align: center;
+        padding: 80px 50px;
+        background: white;
+        border-radius: 25px;
+        color: #6c757d;
+        font-size: 22px;
+        font-weight: 500;
+        width: 800px;
+        margin: 50px auto;
+        box-shadow: var(--shadow-card);
+        border: 3px dashed #e9ecef;
+        position: relative;
+    }
+
+        .certificate-page > p::before {
+            content: '🏆';
+            font-size: 60px;
+            display: block;
+            margin-bottom: 25px;
+            opacity: 0.5;
+        }
+
+    /* Hover Efekti Detayları */
+    .certificate-card:hover .certificate-name {
+        color: #0d6efd;
+    }
+
+    .certificate-card:hover .certificate-date {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    /* Sayı Göstergesi Stili */
+    .certificate-page > h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+        .certificate-page > h2::before {
+            content: '📜';
+            font-size: 36px;
+        }
+
+    /* Kart İç Gölge */
+    .certificate-card {
+        position: relative;
+    }
+
+        .certificate-card::before {
+            box-shadow: inset 0 0 30px rgba(0,0,0,0.03);
+        }
+
+    /* Font Kalınlıkları */
+    .certificate-name {
+        font-weight: 900;
+        letter-spacing: -0.5px;
+    }
+
+    .certificate-company {
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .certificate-description {
+        font-weight: 500;
+    }
+
+    /* Grid için Sabit Boyutlar */
+    .certificate-list {
+        grid-auto-rows: 1fr;
+    }
+
+    .certificate-card {
+        height: 100%;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hover efektleri
+        const certificateCards = document.querySelectorAll('.certificate-card');
+
+        certificateCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.zIndex = '100';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.zIndex = '1';
+            });
+        });
+
+        // SQL'deki verilere göre alternatif renkler
+        const companies = ['BTK Akademi', 'Techcareer.net', 'TechCarreer.net', 'YOBODOBO', 'FrontEnd Okulu'];
+
+        certificateCards.forEach((card, index) => {
+            const companyElement = card.querySelector('.certificate-company');
+            if (companyElement) {
+                const companyName = companyElement.textContent.trim();
+
+                // Şirket ismine göre özel renk
+                if (companyName.includes('BTK')) {
+                    companyElement.style.background = 'linear-gradient(135deg, #6f42c1, #845ef7)';
+                } else if (companyName.includes('Tech') || companyName.includes('Front')) {
+                    companyElement.style.background = 'linear-gradient(135deg, #0d6efd, #4dabf7)';
+                } else if (companyName.includes('YOBODOBO')) {
+                    companyElement.style.background = 'linear-gradient(135deg, #20c997, #38d9a9)';
+                }
+            }
+
+            // Kart köşesindeki yıldız ikonunu değiştir
+            const cardStyle = card.style;
+            cardStyle.setProperty('--star-color', index % 3 === 0 ? '#6f42c1' : index % 3 === 1 ? '#0d6efd' : '#20c997');
+        });
+
+        // Sayıyı vurgula
+        const pageTitle = document.querySelector('.certificate-page > h2');
+        if (pageTitle) {
+            const countMatch = pageTitle.textContent.match(/\((\d+)\)/);
+            if (countMatch) {
+                const count = countMatch[1];
+                pageTitle.innerHTML = pageTitle.innerHTML.replace(
+                    `(${count})`,
+                    `<span style="background: linear-gradient(135deg, #6f42c1, #0d6efd); color: white; padding: 5px 15px; border-radius: 20px; font-size: 28px; margin-left: 15px;">${count}</span>`
+                );
+            }
+        }
+
+        // Açıklama uzunsa kısalt
+        const descriptions = document.querySelectorAll('.certificate-description');
+        descriptions.forEach(desc => {
+            if (desc.textContent.length > 150) {
+                desc.textContent = desc.textContent.substring(0, 147) + '...';
+            }
+        });
+    });
+</script>
+
+<div class="certificate-page">
+
+    <h2>Sertifikalar (@ViewBag.CertificateCount)</h2>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="certificate-list">
+
+            @foreach (var item in Model)
+            {
+                <div class="certificate-card">
+
+                    <div class="certificate-name">
+                        @item.CertificateName
+                    </div>
+
+                    <div class="certificate-company">
+                        @item.CompanyName
+                    </div>
+
+                    <div class="certificate-description">
+                        @item.Description
+                    </div>
+
+                    <div class="certificate-date">
+                        @item.CertificateDate
+                    </div>
+
+                </div>
+            }
+
+        </div>
+    }
+    else
+    {
+        <p>Kayıtlı sertifika bulunmamaktadır.</p>
+    }
+
+</div>

@@ -1,0 +1,432 @@
+﻿@model Skill
+@{
+    ViewData["Title"] = "Yeni Yetenek";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<style>
+    /* AÇIK TEMA - Yeni Yetenek Formu */
+    :root {
+        --primary-white: #ffffff;
+        --light-gray: #f8f9fa;
+        --medium-gray: #e9ecef;
+        --text-gray: #6c757d;
+        --text-dark: #343a40;
+        --border-light: #dee2e6;
+        --page-bg: #e9ecef;
+        /* Renkler */
+        --blue-primary: #0d6efd;
+        --blue-light: #e7f1ff;
+        --blue-hover: #0b5ed7;
+        --orange-primary: #fd7e14;
+        --orange-light: #fff3e6;
+        --green-primary: #198754;
+        --green-light: #e6f4ea;
+        --purple-primary: #6f42c1;
+        --purple-light: #f0e6ff;
+        --teal-primary: #20c997;
+        --teal-light: #e6f7f2;
+        --yellow-primary: #ffc107;
+        --yellow-light: #fff8e1;
+        /* Gölgeler */
+        --shadow-light: 0 3px 10px rgba(0,0,0,0.08);
+        --shadow-medium: 0 6px 20px rgba(0,0,0,0.12);
+        --shadow-strong: 0 10px 30px rgba(0,0,0,0.15);
+        --shadow-card: 0 8px 25px rgba(0,0,0,0.1);
+        --shadow-form: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    body {
+        background-color: #dee2e6;
+        min-height: 100vh;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        background-image: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Ana Container */
+    .form-container {
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Geri Dön Butonu */
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--text-gray);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-bottom: 20px;
+        padding: 10px 0;
+        transition: all 0.3s ease;
+    }
+
+        .back-link:hover {
+            color: var(--blue-primary);
+            transform: translateX(-5px);
+        }
+
+        .back-link::before {
+            content: '←';
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+    /* Form Kartı */
+    .form-card {
+        background-color: white;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: var(--shadow-form);
+        border: 1px solid #d1d9e6;
+        background-image: linear-gradient(135deg, #ffffff 0%, #fafbfd 100%);
+    }
+
+    /* Form İçerik */
+    .form-content {
+        padding: 40px;
+    }
+
+    /* Form Başlık */
+    .form-header {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .form-title {
+        color: var(--text-dark);
+        font-size: 32px;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+    .form-subtitle {
+        color: #495057;
+        font-size: 16px;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    /* Form Grupları */
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    .form-label {
+        display: block;
+        color: var(--text-dark);
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    /* Input Alanı */
+    .input-container {
+        position: relative;
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: var(--text-gray);
+        z-index: 1;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 16px 16px 16px 50px;
+        border: 1px solid var(--border-light);
+        border-radius: 14px;
+        background-color: white;
+        font-size: 15px;
+        color: var(--text-dark);
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--blue-primary);
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .form-input::placeholder {
+            color: #adb5bd;
+        }
+
+    /* Range Slider */
+    .range-container {
+        background: white;
+        border-radius: 14px;
+        padding: 20px;
+        border: 1px solid var(--border-light);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+    .range-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .range-value {
+        background: linear-gradient(135deg, var(--blue-primary), #4dabf7);
+        color: white;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+    }
+
+    /* Range Input Stili */
+    .range-slider {
+        width: 100%;
+        height: 8px;
+        -webkit-appearance: none;
+        appearance: none;
+        background: var(--medium-gray);
+        border-radius: 4px;
+        outline: none;
+        margin: 20px 0;
+    }
+
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--blue-primary);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+        }
+
+            .range-slider::-webkit-slider-thumb:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            }
+
+        .range-slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--blue-primary);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+    /* Range Labels */
+    .range-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .range-label {
+        color: var(--text-gray);
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    /* Submit Butonu */
+    .submit-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 18px;
+        background: linear-gradient(135deg, var(--blue-primary), #4dabf7);
+        color: white;
+        border: none;
+        border-radius: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(13, 110, 253, 0.2);
+        margin-top: 10px;
+    }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
+            background: linear-gradient(135deg, var(--blue-hover), #3d8bf7);
+        }
+
+        .submit-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .submit-btn::before {
+            content: '✓';
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+    /* Form Footer */
+    .form-footer {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 20px 40px;
+        border-top: 1px solid var(--border-light);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer-icon {
+        font-size: 18px;
+        color: var(--blue-primary);
+        flex-shrink: 0;
+    }
+
+    .footer-text {
+        color: var(--text-gray);
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    /* Form Validasyon Stilleri */
+    .form-input:invalid {
+        border-color: #dc3545;
+    }
+
+    .form-input:valid {
+        border-color: #28a745;
+    }
+
+    /* Loading State */
+    .submit-btn.loading {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+        .submit-btn.loading::after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+    
+</style>
+
+<div class="form-container">
+    <a href="/Skill/Index/" class="back-link">Listeye Geri Dön</a>
+
+    <div class="form-card">
+        <div class="form-content">
+            <div class="form-header">
+                <h1 class="form-title">Yeni Yetenek Ekle</h1>
+                <p class="form-subtitle">Portfolyonuzda sergilenecek yeni bir yetenek tanımlayın.</p>
+            </div>
+
+            <form method="post" class="skill-form">
+                <div class="form-group">
+                    <label class="form-label">Yetenek Adı</label>
+                    <div class="input-container">
+                        <span class="input-icon">⚡</span>
+                        <input type="text" asp-for="SkillTitle"
+                               class="form-input"
+                               placeholder="Örn: C#, React, UI Design"
+                               required
+                               autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="range-container">
+                        <div class="range-header">
+                            <label class="form-label">Yetenek Seviyesi</label>
+                            <span id="rangeValue" class="range-value">50%</span>
+                        </div>
+                        <input type="range" asp-for="SkillValue"
+                               min="0" max="100" value="50"
+                               class="range-slider"
+                               oninput="updateRangeValue(this.value)"
+                               onchange="updateRangeValue(this.value)" />
+                        <div class="range-labels">
+                            <span class="range-label">Başlangıç</span>
+                            <span class="range-label">Uzman</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Yeteneği Kaydet
+                </button>
+            </form>
+        </div>
+
+        <div class="form-footer">
+            <span class="footer-icon">💡</span>
+            <p class="footer-text">Bu yetenek kaydedildikten sonra otomatik olarak listeleme sayfasında görünecektir.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Range değerini güncelleme
+    function updateRangeValue(value) {
+        document.getElementById('rangeValue').innerText = value + '%';
+
+        // Range değerine göre renk değiştirme
+        const rangeValue = document.getElementById('rangeValue');
+        if (value <= 30) {
+            rangeValue.style.background = 'linear-gradient(135deg, #ff6b6b, #ff8787)';
+        } else if (value <= 60) {
+            rangeValue.style.background = 'linear-gradient(135deg, #fd7e14, #ff922b)';
+        } else if (value <= 85) {
+            rangeValue.style.background = 'linear-gradient(135deg, #0d6efd, #4dabf7)';
+        } else {
+            rangeValue.style.background = 'linear-gradient(135deg, #198754, #20c997)';
+        }
+    }
+
+    // Form gönderildiğinde loading state
+    document.querySelector('.skill-form').addEventListener('submit', function(e) {
+        const submitBtn = document.querySelector('.submit-btn');
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Kaydediliyor...';
+
+        // Simulate delay for better UX
+        setTimeout(() => {
+            submitBtn.classList.remove('loading');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<span class="submit-icon">✓</span> Yeteneği Kaydet';
+        }, 2000);
+    });
+
+    // Sayfa yüklendiğinde range değerini ayarla
+    document.addEventListener('DOMContentLoaded', function() {
+        const rangeInput = document.querySelector('.range-slider');
+        updateRangeValue(rangeInput.value);
+    });
+</script>

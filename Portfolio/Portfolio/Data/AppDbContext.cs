@@ -19,6 +19,7 @@ public partial class AppDbContext : DbContext
     public virtual DbSet<About> Abouts { get; set; }
 
     public virtual DbSet<Contact> Contacts { get; set; }
+    public virtual DbSet<Certificate> Certificates { get; set; }
 
     public virtual DbSet<Education> Educations { get; set; }
 

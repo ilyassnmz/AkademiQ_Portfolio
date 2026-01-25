@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\",
+  "WorkspaceRootPath": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\shared\\components\\_adminlayoutsidebarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\shared\\components\\_adminlayoutsidebarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|c:\\users\\lunap\\onedrive\\masa\u00FCst\u00FC\\myprojects\\portfolio\\portfolio\\portfolio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438B7CB0-9998-4BA2-BD79-78EF58CBB03C}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1150,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Portfolio\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Portfolio\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADgvx0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T14:48:18.67Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
@@ -48,40 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Portfolio\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Portfolio\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAASwC4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T14:48:19.888Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAJ0BAAAAAAAAAAAiwPkBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T19:20:54.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "Portfolio\\Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "Portfolio\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-23T14:48:15.357Z",
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Portfolio\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T19:19:54.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DefaultController.cs",
-              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Controllers\\DefaultController.cs",
-              "RelativeDocumentMoniker": "Portfolio\\Controllers\\DefaultController.cs",
-              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Controllers\\DefaultController.cs",
-              "RelativeToolTip": "Portfolio\\Controllers\\DefaultController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T14:48:12.472Z",
+              "DocumentIndex": 0,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\lunap\\OneDrive\\Masa\u00FCst\u00FC\\MyProjects\\Portfolio\\Portfolio\\Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "Portfolio\\Views\\Shared\\Components\\_AdminLayoutSidebarComponentPartial\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T16:49:04.742Z",
               "EditorCaption": ""
             }
           ]

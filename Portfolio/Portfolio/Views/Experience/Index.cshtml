@@ -1,0 +1,413 @@
+﻿@{
+    ViewData["Title"] = "Deneyimlerim";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<style>
+    /* AÇIK TEMA - Deneyimler Timeline Sayfası */
+    :root {
+        --primary-white: #ffffff;
+        --light-gray: #f8f9fa;
+        --medium-gray: #e9ecef;
+        --text-gray: #6c757d;
+        --text-dark: #343a40;
+        --border-light: #dee2e6;
+        --page-bg: #e9ecef;
+        /* Renkler */
+        --blue-primary: #0d6efd;
+        --blue-light: #e7f1ff;
+        --blue-hover: #0b5ed7;
+        --orange-primary: #fd7e14;
+        --orange-light: #fff3e6;
+        --orange-hover: #e56b00;
+        --green-primary: #198754;
+        --green-light: #e6f4ea;
+        --green-hover: #157347;
+        --purple-primary: #6f42c1;
+        --purple-light: #f0e6ff;
+        --purple-hover: #5f3dc4;
+        --teal-primary: #20c997;
+        --teal-light: #e6f7f2;
+        --yellow-primary: #ffc107;
+        --yellow-light: #fff8e1;
+        /* Gölgeler */
+        --shadow-light: 0 3px 10px rgba(0,0,0,0.08);
+        --shadow-medium: 0 6px 20px rgba(0,0,0,0.12);
+        --shadow-strong: 0 10px 30px rgba(0,0,0,0.15);
+        --shadow-card: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Sayfa Genel Stilleri */
+    .experience-page {
+        background-color: #dee2e6;
+        min-height: 100vh;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        background-image: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+        padding: 40px 30px;
+        color: #333;
+    }
+
+    /* Sayfa Başlığı */
+    .page-title {
+        color: #2c3e50;
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 50px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #6f42c1, #0d6efd);
+            border-radius: 2px;
+        }
+
+    /* Deneyim Listesi Container */
+    .experience-list {
+        width: 100%;
+        max-width: 800px;
+        position: relative;
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+
+        /* Timeline Çizgisi */
+        .experience-list::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, transparent 0%, #6f42c1 10%, #0d6efd 50%, #6f42c1 90%, transparent 100%);
+            transform: translateX(-50%);
+            border-radius: 3px;
+            z-index: 1;
+        }
+
+    /* Deneyim Öğesi */
+    .experience-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        position: relative;
+        width: 100%;
+    }
+
+        /* Çift numaralı öğeler (sağ taraf) */
+        .experience-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        /* Tek numaralı öğeler (sol taraf) */
+        .experience-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+    /* Yıl Göstergesi */
+    .experience-year {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 800;
+        color: white;
+        z-index: 2;
+        position: relative;
+        flex-shrink: 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        transition: all 0.4s ease;
+        border: 5px solid white;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    /* Yıl renkleri */
+    .experience-item:nth-child(1) .experience-year {
+        background: linear-gradient(135deg, #6f42c1, #845ef7);
+    }
+
+    .experience-item:nth-child(2) .experience-year {
+        background: linear-gradient(135deg, #0d6efd, #4dabf7);
+    }
+
+    .experience-item:nth-child(3) .experience-year {
+        background: linear-gradient(135deg, #20c997, #38d9a9);
+    }
+
+    .experience-item:hover .experience-year {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
+
+    /* Yıl içindeki nokta */
+    .experience-year::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        border: 4px solid;
+    }
+
+    .experience-item:nth-child(1) .experience-year::after {
+        border-color: #6f42c1;
+    }
+
+    .experience-item:nth-child(2) .experience-year::after {
+        border-color: #0d6efd;
+    }
+
+    .experience-item:nth-child(3) .experience-year::after {
+        border-color: #20c997;
+    }
+
+    /* Deneyim İçeriği */
+    .experience-content {
+        flex: 1;
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        border: 2px solid #e9ecef;
+        position: relative;
+        transition: all 0.3s ease;
+        margin: 0 40px;
+        max-width: 400px;
+        color: #2c3e50;
+    }
+
+    .experience-item:nth-child(odd) .experience-content {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .experience-item:nth-child(even) .experience-content {
+        margin-right: 40px;
+        margin-left: 0;
+        text-align: right;
+    }
+
+    .experience-item:hover .experience-content {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        border-color: #dee2e6;
+    }
+
+    /* İçerik Ok İşareti */
+    .experience-content::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        background: white;
+        transform: translateY(-50%) rotate(45deg);
+        border: 2px solid #e9ecef;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .experience-item:nth-child(odd) .experience-content::before {
+        left: -11px;
+    }
+
+    .experience-item:nth-child(even) .experience-content::before {
+        right: -11px;
+        border-left: none;
+        border-top: none;
+        border-right: 2px solid #e9ecef;
+        border-bottom: 2px solid #e9ecef;
+    }
+
+    /* Rol Başlığı */
+    .experience-role {
+        color: #2c3e50;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 0 12px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .experience-item:nth-child(1) .experience-role {
+        color: #6f42c1;
+    }
+
+    .experience-item:nth-child(2) .experience-role {
+        color: #0d6efd;
+    }
+
+    .experience-item:nth-child(3) .experience-role {
+        color: #20c997;
+    }
+
+    /* Şirket Adı */
+    .experience-company {
+        display: inline-block;
+        background: #f8f9fa;
+        color: #495057;
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        border: 2px solid #e9ecef;
+        transition: all 0.3s ease;
+    }
+
+    .experience-item:hover .experience-company {
+        background: #6f42c1;
+        color: white;
+        border-color: #6f42c1;
+        transform: translateY(-2px);
+    }
+
+    /* Açıklama */
+    .experience-description {
+        color: #495057;
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0;
+        padding-top: 20px;
+        border-top: 2px solid #f1f3f5;
+        font-weight: 500;
+    }
+
+    
+    /* Hover Efektleri */
+    .experience-item:hover .experience-year::after {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+    }
+
+    /* Kartlara hafif gradient border efekti */
+    .experience-content {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .experience-content::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(135deg, rgba(111, 66, 193, 0.03) 0%, rgba(13, 110, 253, 0.03) 50%, rgba(32, 201, 151, 0.03) 100%);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+    .experience-item:hover .experience-content::after {
+        opacity: 1;
+    }
+
+    /* Yazı okunabilirliği için kontrast artırma */
+    .experience-page * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Daha iyi okunabilirlik için metin gölgeleri */
+    .experience-role,
+    .experience-company,
+    .experience-description {
+        text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+    }
+
+    /* Arka plan renk kontrastı */
+    .experience-page {
+        background-color: #e9ecef;
+        background-image: none;
+    }
+</style>
+
+<div class="experience-page">
+
+    <h2 class="page-title">DENEYİMLERİM</h2>
+
+    <div class="experience-list">
+
+        <!-- Experience Item -->
+        <div class="experience-item">
+            <div class="experience-year">2025</div>
+
+            <div class="experience-content">
+                <h4 class="experience-role">ÖĞRENCİ</h4>
+                <span class="experience-company">BTK Akademi</span>
+                <p class="experience-description">
+                    İleri Seviye Mobil Uygulama geliştirme eğitimi
+                </p>
+            </div>
+        </div>
+
+        <!-- Experience Item -->
+        <div class="experience-item">
+            <div class="experience-year">2026</div>
+
+            <div class="experience-content">
+                <h4 class="experience-role">ÖĞRENCİ</h4>
+                <span class="experience-company">AkademiQ.AI Business School</span>
+                <p class="experience-description">
+                    .Net ile Back-End eğitimi
+                </p>
+            </div>
+        </div>
+
+        <!-- Experience Item -->
+        <div class="experience-item">
+            <div class="experience-year">2025</div>
+
+            <div class="experience-content">
+                <h4 class="experience-role">ÖĞRENCİ</h4>
+                <span class="experience-company">TechCareer.net</span>
+                <p class="experience-description">
+                    Php Web App Dev. Eğitimi
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    // JavaScript: Hover efektleri ve animasyonlar için
+    document.addEventListener('DOMContentLoaded', function() {
+        const experienceItems = document.querySelectorAll('.experience-item');
+
+        // Her bir deneyim öğesine hover efekti ekle
+        experienceItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.zIndex = '10';
+            });
+
+            item.addEventListener('mouseleave', function() {
+                this.style.zIndex = '1';
+            });
+        });
+
+        // Sayfa yüklendiğinde timeline efekti
+        setTimeout(() => {
+            document.querySelector('.experience-list').style.opacity = '1';
+        }, 300);
+    });
+</script>
